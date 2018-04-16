@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Houdini</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <script>
+        CSS.registerProperty({
+            name: '--bar-color',
+            syntax: '<color>',
+            initialValue: 'green'
+        });
+        CSS.paintWorklet.addModule('worklet.js');
+    </script>
+    
+    <textarea class="houdini"></textarea>
+</body>
+</html>
