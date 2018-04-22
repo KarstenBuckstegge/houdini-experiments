@@ -1,0 +1,30 @@
+.conic {
+    background: red;
+
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* background: conic-gradient(tomato, #bada55); */
+
+
+/* .conic {
+    --gradientStart: rgb(255,99,71);
+    --gradientStop: rgb(186,218,85);
+
+    background: paint(conicGradient);
+
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+} */

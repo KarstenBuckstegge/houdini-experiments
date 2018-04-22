@@ -1,17 +1,10 @@
-class PlaceholderBoxPainter {
-    // Typed OM
-    static get inputProperties() {
-        return ['--bar-color'];
-    }
-
+class DancingBarsPainter {
     paint(ctx, geom, props) {
-        console.log('geom', geom);
-        console.log('props', props);
         const bars = 10;
         const lineWidth = geom.width / bars;
         
         ctx.lineWidth = lineWidth;
-        ctx.strokeStyle = props.get('--bar-color');
+        ctx.strokeStyle = 'green';
 
         for (let i = 0; i < bars; i++) {
             const xPosition = (lineWidth * i) + (lineWidth / 2);
@@ -24,4 +17,25 @@ class PlaceholderBoxPainter {
     }
 }
 
-registerPaint('placeholder-box', PlaceholderBoxPainter);
+registerPaint('dancing-bars', DancingBarsPainter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Typed OM
+// static get inputProperties() {
+//     return ['--bar-color'];
+// }
+
+
+// ctx.strokeStyle = props.get('--bar-color');

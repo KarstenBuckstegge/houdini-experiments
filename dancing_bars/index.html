@@ -10,14 +10,31 @@
 </head>
 <body>
     <script>
+        CSS.paintWorklet.addModule('worklet.js');
+    </script>
+    
+    <textarea class="houdini"></textarea>
+    <div class="sibling" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
         CSS.registerProperty({
             name: '--bar-color',
             syntax: '<color>',
             initialValue: 'green'
         });
-        CSS.paintWorklet.addModule('worklet.js');
-    </script>
-    
-    <textarea class="houdini"></textarea>
-</body>
-</html>
+</script>
